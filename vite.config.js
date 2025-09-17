@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/my-react-app-smdb/", // <-- replace <repo-name> with your GitHub repo name
+  base: "./", // <-- replace <repo-name> with your GitHub repo name
 });
 
 

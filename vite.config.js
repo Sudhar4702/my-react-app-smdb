@@ -1,9 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig({
+export default defineConfig(({ command, mode }) => ({
   plugins: [react()],
-  base: "./", // <-- replace <repo-name> with your GitHub repo name
-});
+  base: mode === "github" ? "/my-react-app-smdb/" : "/",
+}));
+
 
 
